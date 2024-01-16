@@ -19,7 +19,7 @@ def unsubscribe():
     # Process the unsubscription here using the user_id
     # E.g., mark the user's number as 'remove from list'
     message = 'You\'ve been removed from the list. UserID: ' + user_id
-    send_sms_via_server(number='7708626316', message=message, isRaw=True)
+    send_sms_via_server(number='+522227084870', message=message, isRaw=True)
     return 'You have been removed from the list.'
 
 def send_sms_via_server(number, message, isRaw = False):
@@ -32,8 +32,8 @@ def send_sms_via_server(number, message, isRaw = False):
 # Example usage
 # send_sms_via_server('7708426732', 'Would you like to talk? Choose a time: https://calendly.com/sheldonbakergroup/benefitsconversation!')
 def main():
-
     send_sms_via_server('7708626316', 'Would you like to talk? http://192.168.39.134:5000/unsubscribe?id=5klajskdlf29', isRaw=True)
+    send_sms_via_server('+522227084870', 'Would you like to talk? http://192.168.39.134:5000/unsubscribe?id=5klajskdlf29', isRaw=True)
 
 if __name__ == '__main__':
     main()
